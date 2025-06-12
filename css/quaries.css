@@ -1,0 +1,430 @@
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    padding: 2rem 0 2rem 1rem;
+  }
+
+  /*********HERO_SECTION************/
+  .hero-section {
+    background-position: center;
+    background-size: 100%;
+  }
+  .header-flex {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .hero {
+    padding: 1rem;
+  }
+  .hero-main-text {
+    font-size: 15rem;
+  }
+  .hero-text-inner-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+  .hero-second-text {
+    font-size: 1.9rem;
+    padding: 0 19rem 2rem 0;
+    margin: 0;
+  }
+  .eye-style {
+    width: 10rem;
+    height: 10rem;
+  }
+  .face-inner {
+    display: flex;
+    flex-direction: row;
+  }
+  .face-flex {
+    gap: 1rem;
+  }
+  .eye-flex {
+    gap: 0;
+  }
+  .smile-style {
+    width: 10rem;
+  }
+  .hero-main-text-after::after {
+    width: 5rem;
+    height: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, -10%);
+  }
+  .hero-main-text-before::before {
+    width: 5rem;
+    height: 5rem;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -15%);
+  }
+  .question-text {
+    margin: 3rem 0;
+    gap: 1rem;
+  }
+  .emoji-face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    fill: #fffefe;
+  }
+  .xsecondary-text {
+    font-size: 2.2rem;
+  }
+  /*********MOBILE-NAVBAR-SECTION************/
+  .main-nav-btn {
+    display: block;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+  }
+  .ul-list {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .link-list:link,
+  .link-list:visited {
+    font-size: 2rem;
+  }
+  .nav-open .main-nav {
+    transform: translateX(0);
+  }
+  .icon-nav-btn[name="close-outline"] {
+    display: none;
+  }
+  .nav-open .icon-nav-btn[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-nav-btn[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-btn {
+    z-index: 9999;
+  }
+  /*********FOOD-WRAPPER-SECTION************/
+  .foods-wrapper-section {
+    margin: 2rem 0;
+  }
+  .item-text {
+    font-size: 2.4rem;
+    margin: 0 2rem;
+  }
+  .menu-items svg {
+    width: 3.6rem;
+  }
+  /*********MISSION-SECTION************/
+  .mission-section {
+    padding: 4rem 2rem;
+  }
+  .container-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-img-text {
+    gap: 2rem;
+  }
+  .section-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .section-img-2 img {
+    width: 100%;
+    height: 55rem;
+    border-radius: 20px;
+  }
+  .section-text {
+    gap: 2rem;
+  }
+  .first-text {
+    font-size: 1.6rem;
+  }
+  .second-text {
+    font-size: 4.8rem;
+    letter-spacing: 0;
+  }
+  .third-text,
+  .fourth-text {
+    font-size: 1.8rem;
+  }
+  .line-svg {
+    position: absolute;
+    width: 8rem;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -20%);
+  }
+  .toy-svg {
+    display: none;
+  }
+  /*********MAIN_DISHES-SECTION************/
+  .popular-dishes-section {
+    padding: 0 0 15rem 0;
+  }
+  .items-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .item-card {
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .main-header-center {
+    margin: 0;
+    padding: 4rem;
+  }
+  /********CATEGORIES-SECTION************/
+  .categroy-inner {
+    padding: 0;
+  }
+  .container-category {
+    padding: 8rem 0;
+  }
+  .hero-main-text-large {
+    font-size: 14rem;
+  }
+  .cards-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .category-img {
+    width: 90%;
+    height: 90%;
+  }
+  .card-item-query {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .card-item-query-reverse {
+    flex-direction: column;
+  }
+  .category-card-frame {
+    width: 90%;
+    height: 90%;
+    gap: 2rem;
+  }
+  .category-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-link {
+    display: inline-block;
+    transition: all 0.4s ease;
+  }
+  /********OUR-MENU-SECTION************/
+  .menu-section {
+    padding: 0 0 4rem 0;
+  }
+  .menu-contianer {
+    padding: 0 2rem;
+  }
+  .menu-first-text {
+    max-width: max-content;
+    font-size: 4.4rem;
+  }
+  .no-break::after {
+    content: "";
+    display: none;
+  }
+  .menu-third-text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .full-menu-items {
+    grid-template-columns: 1fr;
+  }
+  .menu-link:link {
+    font-size: 2rem;
+  }
+  /*********PARTNER-SECTIN***********/
+  .partner-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .pizza-toy {
+    margin: 0 2rem 2rem 2rem;
+  }
+  /***********WRAPPER-ASIDE**********/
+  .wrapper-aside {
+    height: 30rem;
+  }
+
+  .wrapper-text {
+    font-size: 6rem;
+  }
+  .text-slider {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    transform: rotate(5deg);
+    height: 10rem;
+    background-color: #fab612;
+  }
+  .text-slider-edit {
+    position: absolute;
+    top: -15%;
+    left: -10%;
+    transform: rotate(-5deg);
+    background-color: #f1eadf;
+  }
+  /***********OFFERS-SECTION*********/
+  .offer-section {
+    padding: 2rem 2rem;
+  }
+  .offer-flex-main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .offer-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+  }
+  .offers-flex:hover {
+    transform: scale(0.94);
+  }
+  .offer-text,
+  .offer-text-second {
+    font-size: 2.8rem;
+    letter-spacing: 0;
+  }
+  /*******CONTACT-SECTION***********/
+  .contact-section {
+    padding: 4rem 0;
+  }
+  .contact-main-text {
+    font-size: 7rem;
+  }
+  .contact-cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card {
+    width: 90%;
+    height: 90%;
+  }
+  .card-hover {
+    display: none;
+  }
+  .contact-second-text {
+    margin-bottom: 1rem;
+  }
+  .line-svg-second {
+    width: 5rem;
+    transform: translate(-10%, 10%);
+  }
+  /*********FOOTER-SECTION*********/
+  footer {
+    padding: 2rem;
+  }
+  .footer-first-part {
+    justify-content: space-between;
+  }
+  .footer-logo-img {
+    width: 12rem;
+    height: 2rem;
+  }
+  .footer-first-part-inner {
+    gap: 1rem;
+  }
+  .footer-first-text {
+    font-size: 2rem;
+    min-width: max-content;
+  }
+  .burger-man-svg {
+    width: 11rem;
+    height: 100%;
+  }
+  .footer-second-part {
+    gap: 3rem;
+  }
+  .footer-second-text {
+    font-size: 2rem;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+  }
+  .footer-second-part-inner-main-flex {
+    gap: 2.8rem;
+  }
+  .footer-main-header {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    color: #fffefe;
+  }
+  .footer-address {
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+    color: #ebdddc;
+    line-height: 1.4;
+  }
+  .footer-link-1:link,
+  .footer-link-1:visited {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+  .footer-link-2:link,
+  .footer-link-2:visited {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+  .footer-link-3:link,
+  .footer-link-3:visited {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+  .menu-btn-footer {
+    display: flex;
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+  .footer-btn {
+    font-size: 1rem !important;
+  }
+  .footer-touch {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .fa-brands {
+    padding: 0.8rem;
+    margin: 0;
+  }
+}

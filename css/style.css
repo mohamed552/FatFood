@@ -1,0 +1,976 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0;
+}
+/**************************/
+/* SCROLL ANIIMATION */
+/**************************/
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  display: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 15px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+#scrollToTopBtn ion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+
+.fx-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fx-reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+/*********NAVBAR SECTION************/
+.header {
+  width: 100%;
+  padding: 3.3rem 7rem 0;
+  background-color: #b83b31;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overflow {
+  overflow-y: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10rem;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  padding: 1.6rem 4rem;
+}
+.trigger {
+  height: 1px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+.list-btn-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.8rem;
+}
+.btn-flex {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  z-index: 999999;
+}
+.ul-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+  list-style: none;
+}
+.link-list:link,
+.link-list:visited {
+  color: #fffefe;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.link-list:hover,
+.link-list:active {
+  color: #ebdddc;
+}
+/*********MOBILE_NAV_SECTION************/
+.icon-nav-btn {
+  width: 3.4rem;
+  height: 3.4rem;
+  color: #f1eadf;
+  padding-right: 2rem;
+}
+.main-nav-btn {
+  display: none;
+}
+
+/*********HERO_SECTION************/
+.hero-section {
+  background-color: #b83b31;
+  background-image: url(/decor-brush-stroke.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.hero {
+  padding: 12rem 8rem;
+  background-image: url(/decor-big-burger-copyright.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-text-inner-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 36rem;
+  margin-top: 11rem;
+}
+
+.hero-main-text {
+  display: flex;
+  font-family: "Bebas Neue", sans-serif;
+  color: #f5a911;
+  font-size: 30rem;
+  font-weight: 400;
+}
+.hero-second-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.9rem;
+  color: #fffefe;
+  line-height: 1.6;
+  margin-bottom: 6rem;
+  margin-left: 4rem;
+  margin: 0 0 6rem 4rem;
+}
+.eye-flex {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 4rem;
+  flex: 1;
+}
+
+.face-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.eye-style {
+  width: 22rem;
+  height: 22rem;
+}
+
+.smile-style {
+  width: 20rem;
+}
+.hero-main-text-after::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 198, 198);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+.hero-main-text-before::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 198, 198);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  top: 50%;
+  right: 0;
+  transform: translate(-120%, -10%);
+}
+.question-text {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+.emoji-face {
+  width: 6rem;
+  height: 6rem;
+  fill: #fffefe;
+}
+.secondary-text {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fffefe;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+/*********FOOD-WRAPPER-SECTION************/
+.foods-wrapper-section {
+  margin: 5rem 0;
+  display: flex;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  animation: scrollLeft 30s linear infinite;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+}
+.item-text {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+  color: #1e0b09;
+  letter-spacing: 0.8px;
+  margin: 0 4rem;
+}
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/*********MISSION-SECTION************/
+.mission-section {
+  background-color: #f1eadf;
+  padding: 15rem 0;
+}
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 5;
+}
+.container-inner {
+  display: flex;
+  gap: 10rem;
+}
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+.section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+.section-img-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  justify-content: space-between;
+}
+.main-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  margin-bottom: 2.8rem;
+}
+.line-svg {
+  position: absolute;
+  width: 10rem;
+  top: 0;
+  right: 0;
+  transform: translate(15%, -35%);
+}
+.toy-svg {
+  width: 20rem;
+  height: 20rem;
+}
+.section-img img {
+  max-width: fit-content;
+  height: 73rem;
+  border-radius: 20px;
+}
+.section-img-2 img {
+  width: 100%;
+  height: 55rem;
+  border-radius: 20px;
+}
+.first-text {
+  font-family: "Bebas Neue", sans-serif;
+  color: #1e0b09;
+  font-size: 1.4rem;
+  letter-spacing: 1.8px;
+  font-weight: 400;
+}
+.second-text {
+  font-family: "Bebas Neue", sans-serif;
+  color: #1e0b09;
+  font-size: 5.7rem;
+  letter-spacing: 1.8px;
+  font-weight: 400;
+}
+
+.third-text,
+.fourth-text {
+  font-family: "Poppins", sans-serif;
+  color: #77726b;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.break::after {
+  content: "";
+  display: block;
+}
+.third-text {
+  margin-bottom: 4rem;
+}
+.third-text-no-margin {
+  margin: 0;
+}
+/*********MAIN_DISHES-SECTION************/
+.popular-dishes-section {
+  background-color: #f1eadf;
+  padding-bottom: 34rem;
+}
+.main-header-center {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.items-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5rem;
+}
+.item-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.card-img {
+  width: 15rem;
+}
+.card-text {
+  font-family: "Bebas Neue", sans-serif;
+  color: #1e0b09;
+  font-size: 2.3rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+}
+.card-price {
+  font-family: "Bebas Neue", sans-serif;
+  color: #93b602;
+  font-size: 1.9rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+}
+/********CATEGORIES-SECTION************/
+.category-section {
+  background-color: #f1eadf;
+  height: 100%;
+}
+.category-main-text {
+  position: relative;
+}
+.hero-main-text-large {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  font-size: 34rem;
+  color: #b83b31;
+}
+.categroy-inner {
+  height: 100%;
+  background-color: #b83b31;
+}
+.container-category {
+  padding: 15rem 0;
+  background-color: #b83b31;
+}
+.card-item-query {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+.category-card-text {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #1e0b09;
+}
+.category-card-frame {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 5.8rem;
+  background-color: #ffffff;
+  padding: 3.6rem 3.5rem;
+  border-radius: 20px;
+}
+
+.category-card-frame::after {
+  content: "Order Now";
+  color: #b83b31;
+  font-size: 2.6rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.3px);
+  -webkit-backdrop-filter: blur(13.3px);
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.category-card-frame.show::after {
+  opacity: 1;
+}
+
+.third-text-category {
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+.category-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.card-link {
+  display: none;
+  transition: all 0.4s ease;
+}
+.card-link:link,
+.card-link:visited {
+  text-decoration: none;
+  color: #1e0b09;
+  font-size: 1.6rem;
+}
+.card-link:hover,
+.card-link:active {
+  color: #77726b;
+}
+/********OUR-MENU-SECTION************/
+.menu-section {
+  background-color: #b83b31;
+  height: 100%;
+  padding-bottom: 10rem;
+}
+.menu-contianer {
+  max-width: 110rem;
+}
+.menu-text-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.menu-first-text {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fffefe;
+  font-size: 5.7rem;
+  font-weight: 400;
+}
+.orange-text {
+  color: #fab612;
+}
+.menu-third-text {
+  color: #ebdddc;
+  margin-left: auto;
+  margin-bottom: 6rem;
+  letter-spacing: 0.8px;
+  font-size: 1.8rem;
+}
+.full-menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  margin-bottom: 2rem;
+}
+
+.full-menu-item-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.item-img {
+  width: 11.2rem;
+  border-radius: 0.6rem;
+}
+.item-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.3rem;
+  color: #fffefe;
+  letter-spacing: 1px;
+}
+.item-content {
+  margin-bottom: 0;
+  color: #ebdddc;
+}
+.price {
+  font-size: 2.3rem;
+}
+.ho-line {
+  width: 100%;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.2);
+}
+.main-btn {
+  display: flex;
+  justify-content: center;
+}
+.menu-btn {
+  border: none;
+  background-color: #f5a911;
+  padding: 1.6rem 4rem;
+  border-radius: 5rem;
+}
+.menu-link:link,
+.menu-link:visited {
+  display: inline-block;
+  color: #f1eadf;
+  font-size: 1.6rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+/*********PARTNER-SECTIN***********/
+.partner-article {
+  background-color: #b83b31;
+  height: 100%;
+}
+.partner-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.partner-logo {
+  display: inline-block;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.partner-logo:hover {
+  opacity: 1;
+}
+.pizza-toy {
+  width: 23rem;
+  fill: #f1eadf;
+  margin-bottom: 1rem;
+}
+/***********WRAPPER-ASIDE**********/
+.wrapper-aside {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #b83b31;
+  overflow: hidden;
+}
+.text-slider {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translate(-50%, -50%) rotate(5deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  background-color: #fab612;
+  transform: rotate(5deg);
+}
+.wrapper-text {
+  min-width: max-content;
+  font-family: "Bebas Neue", sans-serif;
+  color: #1e0b09;
+  font-size: 11rem;
+  animation: left 30s linear infinite;
+}
+.text-slider-edit {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  transform: rotate(-5deg);
+  background-color: #f1eadf;
+}
+.wrapper-text-edit {
+  color: #b83b31;
+  min-width: max-content;
+  animation: right 30s linear infinite;
+}
+@keyframes left {
+  form {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes right {
+  form {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/***********OFFERS-SECTION*********/
+.offer-section {
+  position: relative;
+  height: 100%;
+  padding-bottom: 100px;
+  background-color: #b83b31;
+}
+.offer-flex-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.offers-flex {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.offer-img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.offers-flex:hover {
+  transform: scale(0.97);
+}
+.offer-text,
+.offer-text-second {
+  pointer-events: none; /* Makes sure text doesn't interfere with hover */
+  display: fixed;
+  font-family: "Bebas Neue", sans-serif;
+  color: #f1eadf;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.offer-text {
+  min-width: max-content;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  line-height: 1.2;
+}
+/*******CONTACT-SECTION***********/
+.contact-section {
+  height: 100%;
+  background-color: #b83b31;
+  padding-bottom: 10rem;
+}
+.contact-main-text {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fffefe;
+  font-size: 13rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.contact-cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  padding-bottom: 50px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 30rem;
+  height: 30rem;
+  padding: 4rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.card-hover {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+  top: 0;
+  left: 0;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  z-index: 999;
+  transition: all 0.5s ease;
+}
+.card-hover.hide {
+  opacity: 0;
+}
+
+.card ion-icon {
+  color: #f1eadf;
+  font-size: 2.8rem;
+}
+.ion-style-hover {
+  font-size: 6rem !important;
+  color: #b83b31 !important;
+}
+.contact-first-text {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.3rem;
+  color: #fffefe;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.contact-second-text {
+  color: #ebdddc;
+}
+.contact-link {
+  display: inline-block;
+}
+.contact-link:link,
+.contact-link:visited {
+  font-family: "Bebas Neue", sans-serif;
+  color: #fffefe;
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.contact-link:hover,
+.contact-link:active {
+  color: #fab612;
+}
+.line-svg-second {
+  fill: #fffefe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-20%, 30%);
+  width: 12rem;
+  height: 12rem;
+}
+/*********FOOTER-SECTION*********/
+footer {
+  height: 100%;
+  background-color: #65261f;
+  padding-top: 6rem;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+}
+.footer-first-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 4rem;
+}
+.footer-logo-img {
+  width: 21rem;
+  height: 3.3rem;
+}
+.footer-first-part-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.footer-first-text {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+  color: #fffefe;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.burger-man-svg {
+  width: 19rem;
+  height: 100%;
+} /*************FOOTER-SECOND*************/
+.footer-second-part {
+  padding: 6rem 0;
+  display: flex;
+  gap: 16rem;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-second-text {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.3rem;
+  color: #fffefe;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+}
+.footer-second-part-inner-main-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8rem;
+}
+.footer-office-data {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2.4rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-main-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  color: #fffefe;
+}
+.footer-address {
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  color: #ebdddc;
+  line-height: 1.4;
+}
+.footer-link-1 {
+  display: inline-block;
+}
+.footer-link-2 {
+  display: inline-block;
+}
+.footer-link-1:link,
+.footer-link-1:visited {
+  font-family: "Poppins", sans-serif;
+  color: #ebdddc;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.footer-link-1:hover,
+.footer-link-1:active {
+  color: #fab612;
+}
+.footer-link-2:link,
+.footer-link-2:visited {
+  font-family: "Poppins", sans-serif;
+  color: #ebdddc;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.footer-link-2:hover,
+.footer-link-2:active {
+  color: #fab612;
+}
+
+.footer-link-3 {
+  display: inline-block;
+  min-width: max-content;
+}
+.footer-link-3:link,
+.footer-link-3:visited {
+  font-family: "Poppins", sans-serif;
+  color: #ebdddc;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.footer-link-3:hover,
+.footer-link-3:active {
+  color: #fab612;
+}
+.footer-touch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.fa-brands {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 1.4rem;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-top: 50%;
+}
